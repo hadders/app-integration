@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paybuddy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="PayBuddyApp"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.paybuddy.activity.MainActivity"
+            android:label="PayBuddyMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.paybuddy.activity.PayActivity"
+            android:label="PayBuddyRedeem" >
+            <intent-filter>
+                <action android:name="com.example.albert.PAYMENT" />
+
+                <category android:name="com.example.albert.PAY" />
+
+                <data android:mimeType="vnd.com.example.request/vnd.com.example.payment.v1" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
