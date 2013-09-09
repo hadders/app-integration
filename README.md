@@ -1,5 +1,5 @@
-app-integration
-===============
+prototype: app-integration
+==========================
 
 How to increase the communication between payment and facilitation apps.
 
